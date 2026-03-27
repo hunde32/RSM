@@ -1,7 +1,7 @@
 use crate::error::RsmError;
 use std::fs;
 use std::os::unix::fs::symlink as unix_symlink;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 use tracing::{debug, warn};
 
 /// Expands a tilde `~` to the user's home directory.

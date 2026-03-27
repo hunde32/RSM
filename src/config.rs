@@ -16,7 +16,6 @@ pub struct LinkEntry {
     pub source: PathBuf,
     pub tags: Option<Vec<String>>,
     pub os: Option<String>,
-    pub host: Option<String>,
 }
 
 impl Config {
