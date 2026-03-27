@@ -1,0 +1,18 @@
+[package]
+name = "rsm"
+version = "0.1.0"
+edition = "2024"
+authors = ["Hundaol Dejen <hundaoldejen1@gmail.com>"]
+description = "A safe, fast, and modular symlink manager."
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+colored = "2.1"
+indicatif = "0.17"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+directories = "5.0"
+hostname = "0.4"

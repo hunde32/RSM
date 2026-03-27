@@ -1,0 +1,3 @@
+[links]
+# "/absolute/path/to/target" = "/absolute/path/to/source"
+"/tmp/rsm_test_link" = "/home/hunde/rsm/README.md"
