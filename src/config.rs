@@ -21,6 +21,7 @@ pub struct LinkEntry {
     pub host: Option<String>,
     pub tags: Option<Vec<String>>,
     pub ignore: Option<Vec<String>>,
+    
 }
 
 impl Config {
@@ -37,9 +38,8 @@ impl Config {
 
         let local_path = PathBuf::from("rsm.toml");
         if local_path.exists() {
-            return Ok(local_path);
+           return Ok(local_path);
         }
-
         if let Some(proj_dirs) = ProjectDirs::from("", "", "rsm") {
             let config_dir = proj_dirs.config_dir();
             let xdg_path = config_dir.join("rsm.toml");
